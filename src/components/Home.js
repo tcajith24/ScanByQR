@@ -17,21 +17,21 @@ const Home = () => {
                                     <input type='text' className='form-control' placeholder='Enter your Vehicle Number' />
                                 </div>
                             </div>
-                            <a href='' className='btn btn-purple'>Check</a>
+                            <a href='#' className='btn btn-purple'>Check</a>
                         </div>
                     </div>
                     <div className='az-dashboard-nav'>
                         <nav className='nav'>
-                            <a href='' className='nav-link active' data-toggle="tab">Overview</a>
-                            <a href='' className='nav-link' data-toggle="tab">Audiences</a>
-                            <a href='' className='nav-link' data-toggle="tab">Demographics</a>
-                            <a href='' className='nav-link' data-toggle="tab">More</a>
+                            <a href='#' className='nav-link active' data-toggle="tab">Overview</a>
+                            <a href='#' className='nav-link' data-toggle="tab">Audiences</a>
+                            <a href='#' className='nav-link' data-toggle="tab">Demographics</a>
+                            <a href='#' className='nav-link' data-toggle="tab">More</a>
                         </nav>
                         <nav className='nav'>
-                            <a href='' className='nav-link'><i className='far fa-save'></i> Save Report</a>
-                            <a href='' className='nav-link'><i className='far fa-file-pdf'></i> Export to PDF</a>
-                            <a href='' className='nav-link'><i className='far fa-envelope'></i>Send to Email</a>
-                            <a href='' className='nav-link'><i className='fas fa-ellipsis-h'></i></a>
+                            <a href='#' className='nav-link'><i className='far fa-save'></i> Save Report</a>
+                            <a href='#' className='nav-link'><i className='far fa-file-pdf'></i> Export to PDF</a>
+                            <a href='#' className='nav-link'><i className='far fa-envelope'></i>Send to Email</a>
+                            <a href='#' className='nav-link'><i className='fas fa-ellipsis-h'></i></a>
                         </nav>
                     </div>
                     <div className='row row-sm mg-b-20'>
@@ -131,10 +131,10 @@ const Home = () => {
                                                 <div className="product-nav-wrapper row">
                                                     <div className="col-lg-8 col-md-5">
                                                         <ul className="nav product-filter-nav">
-                                                            <li className="active"><a href="#">USED CARS</a></li>
-                                                            <li><a href="#">USED BIKES</a></li>
-                                                            <li><a href="#">CAR DEALERS</a></li>
-                                                            <li><a href="#">BIKE DEALERS</a></li>
+                                                            <li className="active"><a href="javascript:void(0)">USED CARS</a></li>
+                                                            <li><a href="javascript:void(0)">USED BIKES</a></li>
+                                                            <li><a href="javascript:void(0)">CAR DEALERS</a></li>
+                                                            <li><a href="javascript:void(0)">BIKE DEALERS</a></li>
                                                         </ul>
                                                     </div>
 
@@ -154,9 +154,9 @@ const Home = () => {
                                                                 <p className="product-price">₹6.53 Lakh</p>
                                                                 <p className="product-actual-price">$199.00</p>
                                                                 <ul className="product-variation">
-                                                                    <li><a href="#">64K km</a></li>
-                                                                    <li><a href="#">Petrol</a></li>
-                                                                    <li><a href="#">Manual</a></li>
+                                                                    <li><a href="javascript:void(0)">64K km</a></li>
+                                                                    <li><a href="javascript:void(0)">Petrol</a></li>
+                                                                    <li><a href="javascript:void(0)">Manual</a></li>
                                                                 </ul>
                                                                 <p className="product-description">3 shortlisted this car</p>
                                                             </div>
@@ -176,9 +176,9 @@ const Home = () => {
                                                                 <p className="product-price">$999.00</p>
                                                                 <p className="product-actual-price">$1999.00</p>
                                                                 <ul className="product-variation">
-                                                                    <li><a href="#">21K km </a></li>
-                                                                    <li><a href="#">Diesel</a></li>
-                                                                    <li><a href="#">Manual</a></li>
+                                                                    <li><a href="javascript:void(0)">21K km </a></li>
+                                                                    <li><a href="javascript:void(0)">Diesel</a></li>
+                                                                    <li><a href="javascript:void(0)">Manual</a></li>
                                                                 </ul>
                                                                 <p className="product-description">193 shortlisted this car </p>
                                                             </div>

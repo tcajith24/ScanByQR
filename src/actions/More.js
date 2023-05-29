@@ -1,4 +1,4 @@
-import { BLOG, FAQ, FAQBYCATEGORY, FAQBYID } from "../constants/actionTypes";
+import { BLOG, FAQ,  FAQBYID } from "../constants/actionTypes";
 
 import * as api from "../api/index.js";
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { getFAQ, getFAQById } from "../../actions/More";
+import { getFAQ } from "../../actions/More";
 import { useParams } from "react-router-dom";
 
 import('bootstrap');
@@ -25,7 +25,7 @@ const FAQ = () => {
             await dispatch(getFAQ());
         }
         faqData();
-    }, []);
+    }, [dispatch]);
 
     console.log(faqs);
 
@@ -37,7 +37,7 @@ const FAQ = () => {
                 console.log(faqs);
                 console.log(FAQItemIDColl[0]);
                 const faqFilterData = faqs.filter((item) => {
-                    return item.category == FAQItemIDColl[0];
+                    return item.category === FAQItemIDColl[0];
                 });
                 console.log(faqFilterData);
                 setFAQColl(faqFilterData);

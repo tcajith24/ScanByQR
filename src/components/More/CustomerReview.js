@@ -55,7 +55,7 @@ const CustomerReview = () => {
                                                     </div>
                                                     <div claassName='project-description'>
                                                         <p>{item.review}
-                                                            <a href='' data-bs-toggle='modal' data-bs-target='#exampleModal'>Read Review</a>
+                                                            <a href="javascript:void(0)" data-bs-toggle='modal' data-bs-target='#exampleModal'>Read Review</a>
                                                         </p>
                                                     </div>
                                                 </div>
