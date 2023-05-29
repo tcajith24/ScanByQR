@@ -1,0 +1,10 @@
+export const BLOG = "BLOG";
+export const CAR = "CAR";
+export const CARCATALOG = "CARCATALOG";
+export const CARCATALOGBYID = "CARCATALOGBYID";
+export const FAQ = "FAQ";
+export const FAQBYID = "FAQBYID";
+export const FAQBYCATEGORY = "FAQBYCATEGORY";
+export const EAUCTIONBIKE = "EAUCTIONBIKE";
+export const EAUCTIONCAR = "EAUCTIONCAR";
+export const EAUCTIONDETAIL = "EAUCTIONDETAIL";
