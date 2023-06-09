@@ -42,49 +42,51 @@ const UsedCar = () => {
 
     useEffect(() => {
         console.log(values);
-        const filterData = carCatalog.filter((car) => {
-            if (values.priceRange === "1-5") {
-                console.log(getPriceInLakhFormat(car.finalPrice, true));
-                if (getPriceInLakhFormat(car.finalPrice, true) > 1 && getPriceInLakhFormat(car.finalPrice, true) <= 5) {
-                    return true;
+        if (carCatalog) {
+            const filterData = carCatalog.filter((car) => {
+                if (values.priceRange === "1-5") {
+                    console.log(getPriceInLakhFormat(car.finalPrice, true));
+                    if (getPriceInLakhFormat(car.finalPrice, true) > 1 && getPriceInLakhFormat(car.finalPrice, true) <= 5) {
+                        return true;
+                    }
+                } else if (values.priceRange === "5-10") {
+                    if (getPriceInLakhFormat(car.finalPrice, true) > 5 && getPriceInLakhFormat(car.finalPrice, true) <= 10) {
+                        return true;
+                    }
+                } else if (values.priceRange === "10-15") {
+                    if (getPriceInLakhFormat(car.finalPrice, true) > 10 && getPriceInLakhFormat(car.finalPrice, true) <= 15) {
+                        return true;
+                    }
+                } else if (values.priceRange === "15-20") {
+                    if (getPriceInLakhFormat(car.finalPrice, true) > 15 && getPriceInLakhFormat(car.finalPrice, true) <= 20) {
+                        return true;
+                    }
+                } else if (values.priceRange === "20-50") {
+                    if (getPriceInLakhFormat(car.finalPrice, true) > 20 && getPriceInLakhFormat(car.finalPrice, true) <= 50) {
+                        return true;
+                    }
+                } else if (values.priceRange === "50-100") {
+                    if (getPriceInLakhFormat(car.finalPrice, true) > 50 && getPriceInLakhFormat(car.finalPrice, true) < 100) {
+                        return true;
+                    }
+                } else if (values.priceRange === "100") {
+                    if (getPriceInLakhFormat(car.finalPrice, true) >= 100) {
+                        return true;
+                    }
+                } else {
+                    return false;
                 }
-            } else if (values.priceRange === "5-10") {
-                if (getPriceInLakhFormat(car.finalPrice, true) > 5 && getPriceInLakhFormat(car.finalPrice, true) <= 10) {
-                    return true;
-                }
-            } else if (values.priceRange === "10-15") {
-                if (getPriceInLakhFormat(car.finalPrice, true) > 10 && getPriceInLakhFormat(car.finalPrice, true) <= 15) {
-                    return true;
-                }
-            } else if (values.priceRange === "15-20") {
-                if (getPriceInLakhFormat(car.finalPrice, true) > 15 && getPriceInLakhFormat(car.finalPrice, true) <= 20) {
-                    return true;
-                }
-            } else if (values.priceRange === "20-50") {
-                if (getPriceInLakhFormat(car.finalPrice, true) > 20 && getPriceInLakhFormat(car.finalPrice, true) <= 50) {
-                    return true;
-                }
-            } else if (values.priceRange === "50-100") {
-                if (getPriceInLakhFormat(car.finalPrice, true) > 50 && getPriceInLakhFormat(car.finalPrice, true) < 100) {
-                    return true;
-                }
-            } else if (values.priceRange === "100") {
-                if (getPriceInLakhFormat(car.finalPrice, true) >= 100) {
-                    return true;
-                }
-            } else {
-                return false;
-            }
 
-            if (values.brand !== car.brand) return false;
-            if (values.year !== car.year) return false;
-            if (values.kmsDriven !== car.kmsDriven) return false;
-            if (values.fuelType !== car.fuelType) return false;
-            if (values.bodyType !== car.bodyType) return false;
-            if (values.transmission !== car.transmission) return false;
-            return true;
-        });
-        console.log(filterData);
+                if (values.brand !== car.brand) return false;
+                if (values.year !== car.year) return false;
+                if (values.kmsDriven !== car.kmsDriven) return false;
+                if (values.fuelType !== car.fuelType) return false;
+                if (values.bodyType !== car.bodyType) return false;
+                if (values.transmission !== car.transmission) return false;
+                return true;
+            });
+            console.log(filterData);
+        }
     }, [values]);
 
 

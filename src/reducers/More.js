@@ -1,8 +1,10 @@
-import { BLOG, FAQ, FAQBYID } from "../constants/actionTypes";
+import { BLOG, BLOGBYID, FAQ, FAQBYID } from "../constants/actionTypes";
 
 export default (state = [], action) => {
     switch (action.type) {
         case BLOG:
+            return action.payload;
+        case BLOGBYID:
             return action.payload;
         case FAQ:
             return action.payload;

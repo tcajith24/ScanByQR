@@ -1,4 +1,5 @@
 export const BLOG = "BLOG";
+export const BLOGBYID = "BLOGBYID";
 export const CAR = "CAR";
 export const CARCATALOG = "CARCATALOG";
 export const CARCATALOGBYID = "CARCATALOGBYID";
@@ -8,3 +9,5 @@ export const FAQBYCATEGORY = "FAQBYCATEGORY";
 export const EAUCTIONBIKE = "EAUCTIONBIKE";
 export const EAUCTIONCAR = "EAUCTIONCAR";
 export const EAUCTIONDETAIL = "EAUCTIONDETAIL";
+export const BIKECATALOG = "BIKECATALOG";
+export const BIKECATALOGBYID = "BIKECATALOGBYID";

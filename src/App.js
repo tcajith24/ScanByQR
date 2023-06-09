@@ -20,6 +20,8 @@ import EAuctionCar from './components/eAuctionVehicle/eAuctionCar';
 import EAuctionBike from './components/eAuctionVehicle/eAuctionbike';
 import EAuctionVehicleDetail from './components/eAuctionVehicle/eAuctionVehicleDetail';
 import CarDetail from './components/car/carDetail';
+import BikeDetail from './components/bike/bikeDetail';
+import BlogDetail from './components/More/BlogDetail';
 function App() {
 	return (
 		<BrowserRouter>
@@ -35,12 +37,14 @@ function App() {
 					<Route path='/bike/new-bike' element={<NewBike />} />
 					<Route path='/bike/used-bike' element={<UsedBike />} />
 					<Route path='/bike/sell-bike' element={<SellBike />} />
+					<Route path='/bike/bike-detail/:id' element={<BikeDetail />} /> {/* This is for bike detail page */}
 					<Route path='/eAuction/eAuction-car' element={<EAuctionCar />} />
 					<Route path='/eAuction/eAuction-bike' element={<EAuctionBike />} />
 					<Route path='/eAuction/eAuctionDetail/:id' element={<EAuctionVehicleDetail />} />
 					<Route path='/contact-us' element={<ContactUs />} />
 					<Route path="/Customer-Reviews" element={<CustomerReview />} />
 					<Route path='/more/blog' element={<Blog />} />
+					<Route path='/blog/blogDetail/:id' element={<BlogDetail />} /> {/* This is for blog detail page */}
 					<Route path='/more/faq' element={<FAQ />} />
 					<Route path='/more/faq/:id' element={<FAQ />} />
 				</Routes>
