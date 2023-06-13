@@ -72,8 +72,8 @@ const CarDetail = () => {
                                     <p className='product-actual-price'>{getPriceInLakhFormat(carCatalogById.price)}</p>
                                     <nav className='nav'>
                                         <a href='#' className='nav-link'>
-                                            <i className='fas fa-mobile-alt' />
-                                            Get all details
+                                            <i className='fas fa-mobile-alt' />  
+                                             Get all details
                                         </a>
                                         <a href='#' className='nav-link'>
                                             <i className='far fa-envelope' />
@@ -237,7 +237,7 @@ const CarDetail = () => {
                         </div>
                     </div>
                     <div className='row product-item-wrapper'>
-                        <SimilarCarAds />
+                        <SimilarCarAds carItem={carCatalogById} />
                     </div>
                 </div>
             </div>

@@ -31,14 +31,13 @@ const UsedBike = () => {
 
     useEffect(() => {
         const bankData = async () => {
-            dispatch(BikeCatalog());
+           await dispatch(BikeCatalog());
         }
         bankData();
         setBikeColl(bikeCatalog);
     }, [dispatch]);
 
     useEffect(() => {
-        console.log(values);
         if (bikeCatalog) {
             const filterData = bikeCatalog.filter((bike) => {
                 if (values.priceRange === "1-5") {
